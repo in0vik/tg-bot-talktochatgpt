@@ -27,7 +27,7 @@ class OpenAI {
   async chat(messages) {
     try {
       const response = await this.openai.createChatCompletion({
-        model: 'gpt-4-1106-preview',
+        model: 'gpt-4-turbo',
         messages: messages,
       });
       return response.data.choices[0].message; // Return the assistant's response
